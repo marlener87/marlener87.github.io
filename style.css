@@ -1,0 +1,117 @@
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(darkcyan, white);
+    color: white;
+    height: 100px;
+    padding-left: 150px !important;
+}
+
+.nav-item {
+    padding-left: 20px;
+}
+
+
+/* BODY */
+html, body {
+    height: 100%;
+}
+
+h1 {
+    color: darkcyan;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: blue;
+    margin-top: 25px !important;
+    margin-bottom: 10px !important;
+}
+
+.body {
+    margin: 20px;
+}
+
+table {
+    margin-left: 15px;
+}
+
+td {
+    padding: 5px;
+    padding-right: 15px; 
+}
+
+p {
+    margin-left: 15px;
+    margin-bottom: 5px !important;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+article {
+    flex: 1.1;
+    margin-right: 40px;
+}
+
+aside {
+    flex: 3;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+}
+
+#sousContainer a {
+    color: black;
+}
+
+.btn-info {
+    border: 0 !important;
+    background: linear-gradient(white, darkcyan);
+}
+
+/* FOOTER */
+footer {
+    /*background-color: darkcyan;*/
+    background: linear-gradient(white, darkcyan);
+    color: white;
+    padding: 10px;
+}
+
+.reso {
+     text-align: center;
+}
+
+.reso ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between; 
+    padding-top: 10px;
+}
+
+.reso ul li {
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+.img_mbl {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
