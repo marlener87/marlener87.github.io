@@ -38,6 +38,13 @@ table {
     margin-left: 15px;
 }
 
+.title_table {
+    color: blue;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
 td {
     padding: 5px;
     padding-right: 15px; 
