@@ -28,6 +28,7 @@ ul > li {
 /* SECTION */
 .header {
     display: flex;
+    justify-content: space-around;
 }
 
 .header-left {
@@ -70,7 +71,6 @@ h1 {
 .btn-container {
     display: flex;
     flex-direction: column;
-    /* width: 41%; */
     min-width: 45%;
     max-width: 50%;
 }
