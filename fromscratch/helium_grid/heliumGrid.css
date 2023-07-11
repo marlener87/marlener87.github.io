@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh ;
+    background: #201F20;
+}
+
+p {
+    font-style: 0.8rem;
+}
+
+/* NAVBAR */
+nav {
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+ul {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 33% 33% 33%;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* SECTION */
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px auto;
+}
+
+.header-left {
+    display: grid;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.header-left-container h3 {
+    color: #474dff;
+    font-size: 1.8rem;
+}
+
+.header-right {
+    width: 50%;
+}
+
+#modem {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+.infos {
+    background: black;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    background-repeat: 10px;
+}
+
+.btn-container {
+    display: grid;
+}
+
+button {
+    background: #474dff;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+}
+
+.investors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86%;
+}
+
+.img-container {
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+
+.img-container img {
+height: 60px;
+}

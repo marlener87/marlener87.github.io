@@ -83,6 +83,7 @@ button {
     border-radius: 10px;
     margin: 10px;
     cursor: pointer;
+    border: none;
 }
 
 .infos-right {
