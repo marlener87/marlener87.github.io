@@ -1,0 +1,33 @@
+/* Partie menu */
+@keyframes apparition {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+// Accueil
+@for $i from 1 through 4 {
+    .apparition-#{$i} {
+        animation: apparition 1s*$i 1.5s ease-out;
+    }
+}
+
+@for $i from 1 through 2 {
+    .nouveau-#{$i} {
+        animation: 4s apparition 0.5s*$i ease-out;
+    }
+}
+
+
+// Restaurants
+@for $i from 1 through 3 {
+    .description-#{$i} {
+        animation: 2s apparition 0.5s*$i ease-out;
+    }
+}

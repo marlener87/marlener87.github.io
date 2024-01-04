@@ -1,0 +1,81 @@
+@media screen and (max-width: 992px) {
+    .body {
+        margin: 0 5%;
+    }
+
+    .hebergement_populaire {
+        flex-direction: column;
+    }
+
+    .hebergement {
+        margin-bottom: 50px;
+        width: auto;
+    }
+
+    .carte_titre {
+        font-size: 22px;
+    }
+
+    .title_bottom {
+        margin-bottom: 50px;
+    }
+
+    .populaire {  
+        width: auto;
+        margin: 0;
+    }
+
+    .ensemble_btn {
+        flex-wrap: wrap;
+    }
+
+    .btn_filtre {
+        margin-bottom: 10px;
+    }
+
+    .populaire_conteneur {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .card_aside {
+        width: 31%;
+        height: 80%;
+        padding: 5px 0;
+        margin-right: 15px;
+        background-color: var(--color-white);
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    .body_aside {
+        margin-left: 8px;
+    }
+
+    .nom_hotel {
+        font-size: 14px;
+    }
+
+    .nuit_aside {
+        font-size: 13px;
+    }
+
+    .card_text {
+        width: auto;
+    }
+
+    
+    .img_activite {
+        height: 210px;
+        object-fit: cover;
+    }
+
+    .card_activite {
+        width:calc(100% / 4 - 20px);
+    }
+
+}

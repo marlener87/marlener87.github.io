@@ -1,0 +1,66 @@
+.navbar__arrow {
+    position: absolute;
+    top: 25px;
+
+   
+}
+
+.arrow_anchor:hover {
+    transition: transform 0.5s ease-out;
+    animation: validation 1s forwards;
+    transform: translateX(0px);
+
+    &:hover {
+        .fa-arrow-left {
+            transform: rotate(-360deg);
+            transition: ease-in-out .8s .3s;
+        }
+    }
+}
+
+.fa-arrow-left {
+    font-size: 20px;
+    /* 
+    transform: rotate(-360deg); */
+    transition: ease-in-out .5s .5s;
+
+    /* */
+    &:hover {
+        color: $color-purple;
+        transform: rotate(-360deg);
+        transition: ease-in-out .8s .3s;
+    }
+}
+
+/* HEADER */
+.resto-container__imgResto {
+    width: 100%;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Menu de la carte */ 
+.card-menu {
+    margin-bottom: 50px;
+}
+
+.card-menu__header {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0; 
+        width: 50px;
+        height: 4px;
+        background-color: $color-validation;  
+    }
+}
+
+.card-menu__title {
+    font-weight: 300;
+}

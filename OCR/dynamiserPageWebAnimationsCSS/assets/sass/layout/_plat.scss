@@ -1,0 +1,137 @@
+.input_card {
+    display: none;
+}
+
+.input_card:checked + .description {
+    .description {
+        &__title {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+        }
+
+        &__text {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    .description-menu {
+        width: calc(100% - 110px);
+    }
+
+    .validation {
+        left: calc(100% - 110px);
+    }
+    .fa-check { 
+        transform: rotate(-360deg); 
+        transition: ease-in-out .5s .5s; 
+    } 
+}
+
+
+/* Entrée, plat, dessert */
+.description {
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px 0 $color-box-shadow;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    overflow: hidden;
+
+    .description-menu {
+        width: calc(100% - 30px);
+        transition: linear .5s; 
+    }    
+
+    &__title {
+        margin: 15px 0 0 0;
+        font-size: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: 700;
+        display: block;
+        margin-top: 15px;
+    }
+
+    &__text {
+        padding-left: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        margin: 15px 0;
+    }
+
+    .validation {
+        position: absolute;
+        height: 100%;
+        left: calc(100% - 40px);
+        width: calc(30px + 80px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: linear .5s; 
+
+        .check__price {
+            font-weight: 700;
+            width: 30px;
+            margin: 0;
+            padding-right: 13px;
+        }
+        .check {
+            background-color: $color-validation;
+            height: 100%;
+            width:80px;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 1s linear;
+
+            &__btn {
+                border-radius: 50%;
+                border: none;
+                background-color: $color-white;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .fa-check {
+                    font-size: 20px;
+                    transition: ease-in-out .9s;
+                }
+            }
+        }    
+    }
+
+    
+    &:hover {
+        .description-menu {
+            width: calc(100% - 110px);
+        }
+
+        .validation {
+            left: calc(100% - 110px);
+        }
+
+        .check {
+            transition: transform 0.5s ease-out;
+            animation: validation 1s forwards;
+            transform: translateX(0px);
+        }
+
+        .fa-check {
+            transform: rotate(-360deg);
+            transition: ease-in-out .8s .3s;
+        }
+    }
+}

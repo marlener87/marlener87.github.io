@@ -1,0 +1,85 @@
+$color-purple: #9356DC;
+$color-parme: #f5edff;
+$color-pink: #ff79da;
+$color-validation: #99e2d0;
+$color-new-resto: #139273;
+$color-grey-light: #eaeaea;
+$color-grey-very-light: #f7f7f7;
+$color-grey: #353535;
+$color-white: #fff;
+$color-black: #000;
+$color-bg-btn: rgb(237,115,218);
+$color-bc-btn-hover: rgb(255,121,218);
+$color-box-shadow: rgba(0,0,0,0.2);
+$color-box-shadow-dark: rgba(0,0,0,0.5);
+$color-heart1: rgba(255,121,218,1);
+$color-heart2: rgba(178,122,227,1);
+$color-btn-light: rgba(237,115,218,1);
+$color-btn-dark: rgba(159,90,220,1);
+$color-border: rgba(255, 255, 255, 0.4);
+
+
+.localisation {
+    background: $color-grey-light;
+    color: $color-grey;
+}
+
+/*.header-container, .section-restos {
+    background-color: $color-grey-very-light;
+}*/
+.header-container, .section-restos, .main-resto {
+    background-color: $color-grey-very-light;
+}
+
+.description {
+    background-color: $color-white;
+}
+
+.header-container__button {
+    color: $color-white;
+}
+  
+.resto-card {
+    color: $color-black;
+}
+
+.fa-solid {
+    color: $color-grey;
+
+    &--color {
+        color: $color-purple;
+    }
+}
+
+.fa-check {
+    color: $color-validation;
+}
+
+.card-function {
+    background-color: $color-grey-very-light;
+
+    &--color {
+        background-color: $color-parme;
+    }
+
+    &__nb {
+        background-color: $color-purple;
+        color: $color-white;
+    }
+}
+
+.footer {
+    background-color: $color-grey;
+
+    .footer-list__lien {
+        color: $color-white;
+    }
+
+    .fa-footer {
+        color: $color-white;
+    }
+
+    .fa-handshake {
+        font-size: 11px;
+    }
+}
